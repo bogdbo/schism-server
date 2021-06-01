@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 import helmet from 'helmet';
 import { internalServerError, notFound } from './utils/errorHandler';
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 
